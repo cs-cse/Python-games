@@ -1,0 +1,46 @@
+                            # Rock Paper Scissors Game
+import random
+
+
+def game(comp,player):
+    if comp=='s' and player=='s':
+        print("Both chose Scissors ")
+    
+    elif comp=='s' and player=='p':
+        print("Computer won")
+    elif comp=='s' and player=='r':
+        print("You won !!")
+    elif comp=='p' and player=='p':
+        print("Both choose Paper")
+    elif comp=='p' and player=='s':
+        print("You won !!")
+    elif comp=='p' and player=='r':
+        print("Computer won")
+    elif comp=='r' and player=='s':
+        print("Computer won")
+    elif comp=='r' and player=='p':
+        print("You won !!")
+    elif comp=='r' and player=='r':
+        print("Both choose Rock")
+    else:
+        print("Incorrect input")
+
+
+
+
+print("Computer's turn: Rock(r)  Paper(p)  Scissor(s)")
+radno=random.randint(1,3)
+if radno==1:
+    comp='r'
+elif radno==2:
+    comp='p'
+else:
+    comp='s'
+player = input("Your turn: Rock(r)  Paper(p)  Scissor(s)   ")
+print("Computer choose " + comp)
+print("You choose " + player)
+
+game(comp,player)
+
+
+
