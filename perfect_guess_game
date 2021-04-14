@@ -1,0 +1,23 @@
+                # Perfect Guess Game
+
+import random
+randnum=random.randint(1,100)
+# print(randnum)
+userinput=0
+guess=0
+print("***************WELCOME TO THE GAME**************\n")
+while(userinput!=randnum):
+    userinput=int(input("Enter a number between 1 to 100\n"))
+    guess+=1
+    if(userinput==randnum):
+     print("\n👌👌👌👌👌   You guessed it correct !!!   👌👌👌👌👌   ")
+    else:
+         if(userinput>randnum):
+             print("WRONG GUESS ! 😒 🤦‍♂️  (enter a smaller number) \n")
+         else:
+             print("WRONG GUESS! 😒 🤦‍♂️   (enter a larger number) \n") 
+
+       
+
+print(f"\nIt took you {guess} guesses to get the answer")         
+    
